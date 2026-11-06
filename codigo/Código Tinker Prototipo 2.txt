@@ -1,0 +1,56 @@
+const int enA = 3; 
+const int in1 = 4;
+const int in2 = 5;
+const int in3 = 6;
+const int in4 = 7;
+const int enB = 9;
+
+// Sensor de luz
+const int sensorLuzPin = A0; 
+
+// Detección para diferenciar color (negro y blanco)
+const int umbral = 500; 
+
+void setup() {
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(in3, OUTPUT);
+  pinMode(in4, OUTPUT);
+  pinMode(enA, OUTPUT);
+  pinMode(enB, OUTPUT);
+  
+  // Motores
+  digitalWrite(enA, HIGH);
+  digitalWrite(enB, HIGH);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+  int valorLuz = analogRead(sensorLuzPin);
+  Serial.println(valorLuz);
+
+  if (valorLuz > umbral) { 
+    //Se detiene si detecta blanco
+    detenerMotores();
+  } else { 
+    //Continúa avanzando si detecta negro
+    avanzarMotores();
+  }
+  
+  delay(50);
+}
+
+void avanzarMotores() {
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+}
+
+void detenerMotores() {
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
+}
