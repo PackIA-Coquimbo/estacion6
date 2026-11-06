@@ -1,0 +1,20 @@
+Medidas Elementos Circuito
+
+Protoboard
+- Largo: 8cm
+- Ancho: 5,5 cm
+- Alto: 1 cm
+
+Placa Arduino
+- Largo: 8 cm
+- Ancho: 6 cm
+- Altura: 2 cm
+
+Controlador
+- Largo: 4,5 CM
+- Altura: 3 cm
+
+Motor DC
+- Largo: 7 cm
+- Ancho: 2,5 cm
+- Altura: 2 cm
