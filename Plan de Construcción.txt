@@ -1,0 +1,16 @@
+Plan de Construcción
+
+1. Charla y conclusiones con demás módulos
+2. Prototipo 1, maqueta manual funcional
+3. Prototipo 2, Tinkercad funcionando
+4. ¿Qué recibir de los demás módulos para que funcione?
+5. Búsqueda Materiales
+6. División materiales a imprimir, para circuitos y materiales fáciles de obtener
+7. Prototipo 3, circuito Arduino funcionando
+8. Pruebas con prototipo 3
+9. Implementación prototipo 3 a estructura final
+10. Pruebas en estructura final
+11. Pruebas finales con productos a mover de A --> B
+12. Implementación al grupo de modulos
+13. Realizar pruebas en conjunto y reparar fallas
+14. Entrega
